@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ldll"
+description = "Find DLL dependencies required for a set of Windows binaries"
+# dynamic = ["version", "description"]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.8"
+version = "0.0.0"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+    "pefile",
+]
+
+[project.scripts]
+ldll = "ldll:main"
+
+[project.urls]
+Homepage = "https://github.com/UB-Mannheim/ldll"
+"Bug Reports" = "https://github.com/UB-Mannheim/ldll/issues"
+# Documentation = "https://ldll.readthedocs.io"
+Repository = "https://github.com/UB-Mannheim/ldll.git"
+Source = "https://github.com/UB-Mannheim/ldll"
